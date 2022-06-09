@@ -3,21 +3,19 @@ import json
 import os
 import socket
 
-try:
-    import packaging
-    import psutil
-    import requests
-    import termcolor
-    from tqdm import tqdm
-except ImportError:
-    print('\nFirst run: Auto installing python requirements.\n')
-    try:
-        # Trying both methods of installations
-        os.system('pip3 install --upgrade packaging psutil termcolor requests tqdm')
-    except Exception:
-        os.system(
-            'python3 -m pip install --upgrade packaging psutil termcolor requests tqdm')
-
+#try:
+import packaging
+import psutil
+import requests
+from tqdm import tqdm
+#except ImportError:
+#    print('\nFirst run: Auto installing python requirements.\n')
+#    try:
+#        # Trying both methods of installations
+#        os.system('pip3 install --upgrade packaging psutil requests tqdm')
+#    except Exception:
+#        os.system(
+#            'python3 -m pip install --upgrade packaging psutil requests tqdm')
 
 import argparse
 import concurrent.futures
